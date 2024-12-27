@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Last indexOf</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- PROBLEM no.04 -->
+    <div class="container">
+        <h2>Find Last of "l" in "Hi World"</h2>
+        <br>
+        <input type="text" id="userInput" placeholder="Type...">
+        <br><br>
+        <button id="find">Result</button>
+        <p id="result"></p>
+    </div>
+
+    <footer>
+        <a href="problem3.html" target="_blank">Back</a>
+        For next assignment
+        <a href="problem5.html" target="_blank">Click here</a>
+        <p>Code with Tanzeela Naz</p> 
+    </footer>
+
+
+    <script>
+//      PROBLEM no.04 
+
+/* Write a program to find the last index of letter “l” in the
+word “Hello World” and display the result in your browser.*/ 
+
+ //  SOLUTION
+
+ function lastIndexOf() {
+            let text = document.getElementById('userInput').value;
+            let index = text.lastIndexOf("l");
+
+            document.getElementById("result").innerHTML =
+                `String is : ${text}.<br>The index of "l" in "${text}" is: ${index}`;
+        }
+
+        document.getElementById("find").addEventListener("click",lastIndexOf );
+
+    </script>
+</body>
+</html>

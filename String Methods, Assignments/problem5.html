@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Characters</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- PROBLEM no.05 -->
+    <div class="container">
+        <h2>Find character at 3rd index <br>in 'Pakistani'</h2>
+        <br>
+        <input type="text" id="userInput" placeholder="Type...">
+        <br><br>
+        <button id="find">Result</button>
+        <p id="result"></p>
+    </div>
+
+    <footer>
+        <a href="problem4.html" target="_blank">Back</a>
+        For next assignment
+        <a href="problem6.html" target="_blank">Click here</a>
+        <p>Code with Tanzeela Naz</p> 
+    </footer>
+
+    <script>
+        //      PROBLEM no.05
+        /* Write a program to find the character at 3rd index in the
+word “Pakistani” and display the result in your browser*/
+
+        //  SOLUTION
+
+        function charAtThirdIndex() {
+            let text = document.getElementById('userInput').value;
+            let character = text.charAt(3);
+
+            document.getElementById("result").innerHTML =
+                `<b>String is : ${text}.<br>The character at 3rd index in "${text}" is: ${character}</b>`;
+            result.style.color = 'green';
+        }
+
+        document.getElementById("find").addEventListener("click", charAtThirdIndex);
+
+    
+    </script>
+
+</body>
+
+</html>

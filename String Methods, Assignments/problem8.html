@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- PROBLEM no.08 -->
+    <div class="container">
+        <h2>Converts a string “472” to a number
+            472.</h2>
+        <br>
+        <input type="text" id="userInput" placeholder="Type...">
+        <br><br>
+        <button id="find">Replace</button>
+        <p id="result"></p>
+    </div>
+
+    <footer>
+        <a href="problem5.html" target="_blank">Back</a>
+        For next assignment
+        <a href="problem7.html" target="_blank">Click here</a>
+        <p>Code with Tanzeela Naz</p>
+    </footer>
+
+    <script> //      PROBLEM no.08
+        /* Write a program that converts a string “472” to a number
+472. Display the values & types in your browser*/
+
+        //  SOLUTION
+
+        function conversion() {
+            let button = document.getElementById("find");
+            let result = document.getElementById("result");
+
+        let userInput = document.getElementById("userInput").value;
+        result.innerHTML = `Value: ${userInput},<br> Type: ${typeof userInput} <br>`;
+
+        let num = Number(userInput);
+        result.innerHTML += `Value: ${num},<br> Type: ${typeof num}`; 
+    }
+    document.getElementById("find").addEventListener("click", conversion);
+
+    </script>
+</body>
+
+</html>

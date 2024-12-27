@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- PROBLEM no.06 -->
+    <div class="container">
+        <h2>Replace the “Hyder” to “Islam” in<br>the
+            word “Hyderabad”</h2>
+        <br>
+        <input type="text" id="userInput" placeholder="Type...">
+        <br><br>
+        <button id="find">Replace</button>
+        <p id="result"></p>
+    </div>
+
+    <footer>
+        <a href="problem5.html" target="_blank">Back</a>
+        For next assignment
+        <a href="problem7.html" target="_blank">Click here</a>
+        <p>Code with Tanzeela Naz</p> 
+    </footer>
+
+
+    <script>
+        //      PROBLEM no.06
+        /*  Write a program to replace the “Hyder” to “Islam” in the
+word “Hyderabad” and display the result in your browser.*/
+
+        //  SOLUTION
+
+        function replace() {
+            let city = "Hyderabad";
+            let newCity = city.replace("Hyder", "Islam");
+
+            document.getElementById("result").innerHTML =
+                `<b>City : ${city}.<br>After Replacement : "${newCity}`;
+            result.style.color = 'green';
+        }
+
+        document.getElementById("find").addEventListener("click", replace);
+
+    </script>
+
+</body>
+
+</html>

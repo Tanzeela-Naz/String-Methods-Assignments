@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index of "n"</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Find Index of "n" in "Pakistani"</h2>
+        <br>
+        <input type="text" id="userInput" placeholder="Type...">
+        <br><br>
+        <button id="find">Result</button>
+        <p id="result"></p>
+    </div>
+
+    <footer>
+        <a href="problem2.html" target="_blank">Back</a>
+        For next assignment
+        <a href="problem4.html" target="_blank">Click here</a>
+        <p>Code with Tanzeela Naz</p> 
+    </footer>
+
+    <script>
+
+        //  PROBLEM no.03
+        /* Write a program to find the index of letter “n” in the word
+        “Pakistani” and display the result in your browser .
+         */
+        //  SOLUTION
+
+        function IndexOfN() {
+            let name = document.getElementById('userInput').value;
+            let index = name.indexOf("n");
+
+            document.getElementById("result").innerHTML =
+                `String : Pkistani.<br>The index of "n" in "${name}" is: ${index}`;
+        }
+
+        document.getElementById("find").addEventListener("click", IndexOfN);
+
+    </script>
+
+</body>
+
+</html>

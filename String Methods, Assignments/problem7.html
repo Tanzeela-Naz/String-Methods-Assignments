@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- PROBLEM no.07 -->
+    <div class="container">
+        <h2>Replace message “Ali "and" Sami are best friends.They play cricket "and"
+            football together.” with "&"</h2>
+        <br>
+        <button id="find">Replace</button>
+        <p id="result"></p>
+    </div>
+
+    <footer>
+        <a href="problem6.html" target="_blank">Back</a>
+        For next assignment
+        <a href="problem8.html" target="_blank">Click here</a>
+        <p>Code with Tanzeela Naz</p> 
+    </footer>
+
+    <script>
+        //      PROBLEM no.07
+        /*. Write a program to replace all occurrences of “and” in the
+string with “&” and display the result in your browser.
+var message = “Ali and Sami are best friends. They play cricket and
+football together.”; */
+
+        //  SOLUTION
+
+        function replace() {
+            var message = "Ali and Sami are best friends. They play cricket and football together.";
+            var newMessage = message.replace(/and/g, "&");
+
+
+            document.getElementById("result").innerHTML =
+                `<b>After Replacement : "${newMessage}`;
+            result.style.color = 'green';
+        }
+
+        document.getElementById("find").addEventListener("click", replace);
+    </script>
+</body>
+
+</html>
